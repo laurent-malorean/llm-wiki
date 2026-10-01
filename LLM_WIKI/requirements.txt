@@ -1,0 +1,20 @@
+# Python requis : 3.11 (voir .python-version) — minimum 3.10
+# Installation : python3.11 -m venv .venv && .venv/bin/pip install -r requirements.txt
+# Versions testées ensemble le 2026-10-01 (Python 3.11, macOS arm64).
+
+# --- Ajout de sources : extraction PDF (.claude/skills/source-add/scripts/pdf_to_text.py) ---
+pypdf>=6.0,<7.0
+
+# --- RAG (_RAG/rag_update.py, _RAG/rag_search.py, _API/wiki_api.py) ---
+lancedb>=0.39,<0.40
+pyarrow>=25.0,<26.0
+sentence-transformers>=6.1,<7.0
+python-frontmatter>=1.1,<1.2
+
+# --- Graphify (clustering et requêtes sur le graphe de liens) ---
+graphifyy>=0.9.73,<1.0
+
+# --- API d'exploration du wiki (_API/wiki_api.py) + serveur de révision (website/) ---
+flask>=3.1,<4.0
+PyYAML>=6.0
+markdown>=3.5
